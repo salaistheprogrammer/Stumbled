@@ -10,8 +10,8 @@ from typing import Final
 from time import sleep
 
 
-TOKEN: Final = '6385414066:AAF5_qzeXOp94f09ID9uBXoH82Y056ARWS8'
-BOT_USERNAME: Final = "ThoughtsManagerBot"
+TOKEN: Final = "Bot's token"
+BOT_USERNAME: Final = "Bot's Username"
 
 
 updater = telegram.ext.Updater(TOKEN, use_context=True)
@@ -199,8 +199,6 @@ def send_on_time(func, send_time):
 
         if current_time == send_time:
             func()
-
-    # context.bot.send_message(chat_id=5360161813, text=f"Sent at {datetime.datetime.now().strftime('%I:%M:%S %p')}")
 
 
 def message_handler(update: Update, context):
